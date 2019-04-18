@@ -3,6 +3,7 @@
 Frontend de la aplicación interview de mercadolibre.
 
 [![Build Status](https://travis-ci.com/mtorre4580/front-meli.svg?branch=master)](https://travis-ci.com/mtorre4580/front-meli)
+[![Coverage Status](https://coveralls.io/repos/github/mtorre4580/front-meli/badge.svg?branch=master)](https://coveralls.io/github/mtorre4580/front-meli?branch=master)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org)
 
