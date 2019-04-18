@@ -7,6 +7,6 @@ cache:
 before_install:
   - npm install -g npm
 script:
-  - npm test
-  - npm run coveralls
+  - npm test -- --coverage
   - npm run build
+  - npm run coveralls

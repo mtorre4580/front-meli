@@ -54,7 +54,7 @@
     "build": "react-scripts build",
     "release": "standard-version",
     "test": "react-scripts test",
-    "coveralls": "npm test && cat ./coverage/lcov.info | coveralls",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -s ./public -p 9001",
     "performance": "node scripts/lighthouse.js",
