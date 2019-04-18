@@ -10,7 +10,6 @@
     "i18next": "15.0.9",
     "i18next-browser-languagedetector": "3.0.1",
     "i18next-xhr-backend": "2.0.1",
-    "jest-coverage-badges": "^1.1.2",
     "node-sass": "4.11.0",
     "query-string": "6.4.0",
     "react": "16.8.5",

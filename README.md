@@ -2,6 +2,7 @@
 
 Frontend de la aplicación interview de mercadolibre.
 
+[![Build Status](https://travis-ci.com/mtorre4580/front-meli.svg?branch=master)](https://travis-ci.com/mtorre4580/front-meli)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org)
 
@@ -12,9 +13,7 @@ Se utilizó [Redux](https://redux.js.org/) para manejar el state de la aplicaci�
 [Redux Form](https://redux-form.com/) para manejar el state del formulario de búsqueda, [Axios](https://github.com/axios/axios) como client para las peticiones HTTP, 
 [Boostrap](https://getbootstrap.com/) para los estilos, [SASS](https://sass-lang.com/) como preprocesador, [Recompose](https://github.com/acdlite/recompose) para no crear componentes stateful en el caso de necesitar algún lifecycle especifico como componentDidMount, React Router para el manejo de las rutas.
 
-## Run the app
-
-- Open a console and cd into your project folder and type:
+## Start App
 
 ``` 
 $ npm install
@@ -37,7 +36,7 @@ $ npm release
 ## Test (Jest / Enzyme)
 
 La aplicación cuenta con test unitarios ubicados en la carpeta __tests__ `src/__tests__`
-Se utilizó jest para los test utilizando Enzyme para los componentes tener snapshots de las versiones que
+Se utilizó [Jest](https://jestjs.io/) para los test utilizando [Enzyme](https://airbnb.io/enzyme/) para los componentes tener snapshots de las versiones que
 se van creando, se realizó test de los actions, reducers.
 
 ```
@@ -46,8 +45,8 @@ $ npm run test
 
 ## Storybook
 
-La aplicación cuenta con [storybook](https://storybook.js.org/) para tener una documentación de los componentes provistos por la App.
-Se encuentran dividos por funcionalidad, se pueden encontrar en la carpeta stories `stories`
+La aplicación cuenta con [Storybook](https://storybook.js.org/) para tener una documentación de los componentes provistos por la App.
+Se encuentran dividos por funcionalidad, se pueden encontrar en la carpeta `stories`
 
 ```
 $ npm run storybook
@@ -75,7 +74,7 @@ Formato: `<type>(<scope>): <subject>`
 ## Performance
 
 Para verificar la performance de la app, se creó un script que ejecuta lighthouse en modo performance.
-(Falta parametrizarlo el port , etc...)
+Falta corregir y parametrizar algunos datos...
 
 ```
 $ npm run performance
