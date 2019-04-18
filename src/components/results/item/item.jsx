@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Item = ({item}) => {
-    console.log('item.free_shipping', item.free_shipping)
     return (
         <article className="item">
             <NavLink className="item-image" to={`items/${item.id}`}>
