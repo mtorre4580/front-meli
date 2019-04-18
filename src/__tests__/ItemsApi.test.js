@@ -17,14 +17,14 @@ describe('Items Api Service', () => {
     });
 
     it('should fetch all results for query ipod API /items', async () => {
-        mock.onGet('/items').reply(200, responseMockSearch);
+        mock.onGet(`${process.env.REACT_APP_API_URL}/items`).reply(200, responseMockSearch);
         const { data } = await itemsApi.search('ipod');
         expect(data).toEqual(responseMockSearch);
     });
 
     it('should fetch detail item by id /items', async () => {
         const id = 'MLA772322281';
-        mock.onGet(`/items/${id}`).reply(200, responseMockDetail);
+        mock.onGet(`${process.env.REACT_APP_API_URL}/items/${id}`).reply(200, responseMockDetail);
         const { data } = await itemsApi.getDetail(id);
         expect(data).toEqual(responseMockDetail);
     });

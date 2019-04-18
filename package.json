@@ -48,7 +48,6 @@
     "redux-test-utils": "0.3.0",
     "standard-version": "5.0.2"
   },
-  "proxy": "http://localhost:5000/api",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

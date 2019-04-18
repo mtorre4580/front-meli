@@ -11,7 +11,7 @@ export default class ItemsApi {
      * @returns {Promise}
      */
     search(query) {
-        return axios.get('/items', { params: { q: query } });
+        return axios.get(`${process.env.REACT_APP_API_URL}/items`, { params: { q: query } });
     }
 
     /**
@@ -20,7 +20,7 @@ export default class ItemsApi {
      * @returns {Promise}
      */
     getDetail(id) {
-        return axios.get(`/items/${id}`);
+        return axios.get(`${process.env.REACT_APP_API_URL}/items/${id}`);
     }
 
 }

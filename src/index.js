@@ -23,7 +23,7 @@ const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(...mi
 sagaMiddleware.run(rootSaga);
 
 // Sentry for track errors in App (mtorre4580@outlook.com)
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'production') {
   Sentry.init({
     dsn: 'https://89b3585b8f56475cb7ae719e7d480daf@sentry.io/1439761'
   });
