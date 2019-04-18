@@ -27,6 +27,11 @@ $ npm install
 $ npm start
 ``` 
 
+## Observación
+
+La aplicación la pensé separada tanto el front como el backend, para correr se necesita tener levantado el backend de node
+se puede encontrar acá [back-meli](https://github.com/mtorre4580/back-meli), en el caso que no fuera asi, lo unico que hay que hacer es setear por express que tome el build de manera static
+
 ## Build and Release
 
 ``` 
