@@ -30,11 +30,11 @@ $ npm start
 ## Build and Release
 
 ``` 
-$ npm build
+$ npm run build
 ```
 
 ``` 
-$ npm release
+$ npm run release
 ```
 
 ## Test (Jest / Enzyme)
