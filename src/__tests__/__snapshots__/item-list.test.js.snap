@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemList /> should render snapshot 1`] = `
+<div
+  className="container"
+>
+  <section>
+    <nav>
+      <ol
+        className="breadcrumb"
+      >
+        <li
+          className="breadcrumb-item"
+        >
+          Electrónica, Audio y Video
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          Audio
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          Reproductores Portátiles
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          iPod
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          iPod classic
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          80 GB
+        </li>
+      </ol>
+    </nav>
+    <article
+      className="item"
+    >
+      <a
+        aria-current={false}
+        className="item-image"
+        href="items/MLA772322281"
+        onClick={[Function]}
+      >
+        <picture
+          className="item-image"
+        >
+          <img
+            alt="Ipod Touch 4ta Generacion 32 Gb"
+            className="d-block item-img"
+            src="http://mla-s2-p.mlstatic.com/738532-MLA25881108346_082017-I.jpg"
+          />
+        </picture>
+      </a>
+      <div
+        className="item-ctn"
+      >
+        <div
+          className="item-header"
+        >
+          <div
+            className="d-flex"
+          >
+            <p
+              className="price"
+            >
+              <span>
+                $
+              </span>
+              680
+            </p>
+          </div>
+          <p
+            className="text-location"
+          >
+            Capital Federal
+          </p>
+        </div>
+        <a
+          aria-current={false}
+          className="item-title"
+          href="items/MLA772322281"
+          onClick={[Function]}
+        >
+          <h2>
+            Ipod Touch 4ta Generacion 32 Gb
+          </h2>
+        </a>
+      </div>
+    </article>
+    <article
+      className="item"
+    >
+      <a
+        aria-current={false}
+        className="item-image"
+        href="items/MLA766877875"
+        onClick={[Function]}
+      >
+        <picture
+          className="item-image"
+        >
+          <img
+            alt="Ipod Classic 60gb"
+            className="d-block item-img"
+            src="http://mla-s2-p.mlstatic.com/947045-MLA29185741092_012019-I.jpg"
+          />
+        </picture>
+      </a>
+      <div
+        className="item-ctn"
+      >
+        <div
+          className="item-header"
+        >
+          <div
+            className="d-flex"
+          >
+            <p
+              className="price"
+            >
+              <span>
+                $
+              </span>
+              1,250
+            </p>
+          </div>
+          <p
+            className="text-location"
+          >
+            Buenos Aires
+          </p>
+        </div>
+        <a
+          aria-current={false}
+          className="item-title"
+          href="items/MLA766877875"
+          onClick={[Function]}
+        >
+          <h2>
+            Ipod Classic 60gb
+          </h2>
+        </a>
+      </div>
+    </article>
+    <article
+      className="item"
+    >
+      <a
+        aria-current={false}
+        className="item-image"
+        href="items/MLA777676864"
+        onClick={[Function]}
+      >
+        <picture
+          className="item-image"
+        >
+          <img
+            alt="Ipod Classic 30gb"
+            className="d-block item-img"
+            src="http://mla-s1-p.mlstatic.com/809984-MLA29730910940_032019-I.jpg"
+          />
+        </picture>
+      </a>
+      <div
+        className="item-ctn"
+      >
+        <div
+          className="item-header"
+        >
+          <div
+            className="d-flex"
+          >
+            <p
+              className="price"
+            >
+              <span>
+                $
+              </span>
+              1,000
+            </p>
+          </div>
+          <p
+            className="text-location"
+          >
+            Buenos Aires
+          </p>
+        </div>
+        <a
+          aria-current={false}
+          className="item-title"
+          href="items/MLA777676864"
+          onClick={[Function]}
+        >
+          <h2>
+            Ipod Classic 30gb
+          </h2>
+        </a>
+      </div>
+    </article>
+    <article
+      className="item"
+    >
+      <a
+        aria-current={false}
+        className="item-image"
+        href="items/MLA769088925"
+        onClick={[Function]}
+      >
+        <picture
+          className="item-image"
+        >
+          <img
+            alt="Ipod Touch 5g 32gb"
+            className="d-block item-img"
+            src="http://mla-s2-p.mlstatic.com/720812-MLA25738240210_072017-I.jpg"
+          />
+        </picture>
+      </a>
+      <div
+        className="item-ctn"
+      >
+        <div
+          className="item-header"
+        >
+          <div
+            className="d-flex"
+          >
+            <p
+              className="price"
+            >
+              <span>
+                $
+              </span>
+              3,200
+            </p>
+          </div>
+          <p
+            className="text-location"
+          >
+            Buenos Aires
+          </p>
+        </div>
+        <a
+          aria-current={false}
+          className="item-title"
+          href="items/MLA769088925"
+          onClick={[Function]}
+        >
+          <h2>
+            Ipod Touch 5g 32gb
+          </h2>
+        </a>
+      </div>
+    </article>
+  </section>
+</div>
+`;

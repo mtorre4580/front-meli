@@ -1,0 +1,18 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.error-ctn {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    .title-err {
+        $text-black: $text-black;
+        @include font-rem(bold, 24px, 24px, null);
+    }
+    p {
+        color: $text-color;
+    }
+}

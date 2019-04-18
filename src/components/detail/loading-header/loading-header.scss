@@ -1,0 +1,59 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.ctn-loader {
+    position:relative;
+    .loader-detail {
+        &.placeholder-loader {
+            border-top:1px solid #DDDEDE;
+            min-height: 500px;
+            background-color: $color-white;
+            .content-loader {
+                padding: 16px;
+                @include respond-to(dt) {
+                    width: 400px;
+                    text-align: right;
+                    justify-content: right;
+                    position: relative;
+                    float: right;
+                    top: 40px;
+                }
+            }
+        }
+    }
+    .animated-background {
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: placeHolderShimmer;
+        animation-timing-function: linear;
+        background: #f6f7f8;
+        background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+        background-size: 800px 104px;
+        height: 18px;
+        position: relative;
+      }
+    .placeholder-loader {
+        .full-line,
+        .half-line {
+          height: 16px;
+          margin-bottom: 16px;
+        }
+        .full-line {
+          width: 100%;
+        }
+        .half-line {
+          width: 50%;
+        }
+    }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}

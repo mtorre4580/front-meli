@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.ctn-searchbox {
+    background-color: $color-yellow ;
+    .searchbox {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        .input-group-search {
+            width: 100%;
+        }
+        .nav-logo {
+            background-image: url('/assets/logo/meli-mobile.png');
+            background-size: 56px 36px;
+            width: 72px;
+            height: 36px;
+            @include respond-to(dt) {
+                background-image: url('/assets/logo/meli-desktop.png');
+                background-size: 80px 54px;
+                width: 90px;
+                height: 54px;
+            }
+            background-repeat: no-repeat;
+        }
+    }
+}
+

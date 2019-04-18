@@ -1,0 +1,10 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.price {
+    @include font-rem(normal, 24px, 24px, null);
+    margin-bottom: 0;
+    span {
+        padding-right: 10px;
+    }
+}

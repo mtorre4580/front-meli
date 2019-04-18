@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+@import './scss/variables.scss';
+
+/** Reset default browsers styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root {
+    background-color: $color-grey;
+    min-height: 100vh;
+}

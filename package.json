@@ -1,0 +1,81 @@
+{
+  "name": "client-app-meli",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "5.0.8",
+    "axios": "0.18.0",
+    "bootstrap": "4.3.1",
+    "history": "4.7.2",
+    "i18next": "15.0.9",
+    "i18next-browser-languagedetector": "3.0.1",
+    "i18next-xhr-backend": "2.0.1",
+    "jest-coverage-badges": "^1.1.2",
+    "node-sass": "4.11.0",
+    "query-string": "6.4.0",
+    "react": "16.8.5",
+    "react-dom": "16.8.5",
+    "react-i18next": "10.7.0",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "5.0.0-alpha.9",
+    "react-scripts": "2.1.8",
+    "recompose": "0.26.0",
+    "redux": "3.7.2",
+    "redux-form": "7.3.0",
+    "redux-saga": "0.16.0",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@storybook/addon-actions": "5.0.8",
+    "@storybook/addon-info": "5.0.8",
+    "@storybook/addon-links": "5.0.8",
+    "@storybook/addons": "5.0.8",
+    "@storybook/react": "5.0.8",
+    "axios-mock-adapter": "1.16.0",
+    "babel-loader": "8.0.5",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.11.2",
+    "enzyme-to-json": "3.3.5",
+    "husky": "^1.3.1",
+    "react-test-renderer": "16.8.5",
+    "redux-devtools-extension": "2.13.8",
+    "redux-test-utils": "0.3.0",
+    "standard-version": "5.0.2",
+    "lighthouse": "4.2.0",
+    "chrome-launcher": "0.10.5"
+  },
+  "proxy": "http://localhost:5000/api",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "release": "standard-version",
+    "test": "react-scripts test --coverage",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -s ./public -p 9001",
+    "performance": "node scripts/lighthouse.js",
+    "build-storybook": "build-storybook"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

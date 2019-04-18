@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound /> should render snapshot 1`] = `
+<div
+  className="not-found"
+>
+  <h2
+    className="title-err"
+  >
+    Parece que esta página no existe
+  </h2>
+  <a
+    aria-current="true"
+    className="active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Ir a la página principal
+  </a>
+</div>
+`;

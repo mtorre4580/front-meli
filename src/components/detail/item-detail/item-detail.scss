@@ -1,0 +1,59 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.item-detail {
+    background-color: $color-white;
+    overflow: hidden;
+    margin-bottom: 40px;
+    .item-detail-ctn {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include respond-to(dt) {
+            flex-direction: row;
+        }
+        .item-detail-image img {
+            width: 100%;
+            height: auto;
+            @include respond-to(dt) {
+                width: 680px;
+                height: 680px;
+            }
+        }
+        .item-detail-header {
+            max-width: 300px;
+            .condition {
+                padding-top: 32px;
+                padding-bottom: 16px;
+            }
+            .item-detail-title {
+                @include font-rem(bold, 24px, 36px, null);
+                margin-bottom: 0;
+            }
+            .price {
+                @include font-rem(normal, 40px, 40px, null);
+                margin: 0;
+                padding: 32px 0;
+            }
+            .btn-item-buy {
+                width: 100%;
+                background-color: $color-blue;
+                color: $color-white;
+            }
+        }
+    }
+    .item-description-ctn {
+        padding-left: 32px;
+        h3 {
+            margin: 0;
+            @include font-rem(600, 28px, 28px, null);
+        }
+        .item-description {
+            padding: 32px 0;
+            @include font-rem(normal, 16px, 20px, null);
+            @include respond-to(dt) {
+                max-width: 75%;
+            }
+        }
+    }
+}

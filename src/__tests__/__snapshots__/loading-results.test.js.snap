@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingResults /> should render snapshot 1`] = `
+<div
+  className="loader-results"
+>
+  Cargando...
+</div>
+`;

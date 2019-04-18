@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Price /> should render snapshot 1`] = `
+<p
+  className="price"
+>
+  <span>
+    R$
+  </span>
+  400
+</p>
+`;

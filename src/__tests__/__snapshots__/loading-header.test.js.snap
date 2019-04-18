@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingHeader /> should render snapshot 1`] = `
+<div
+  className="ctn-loader container"
+>
+  <div
+    className="loader-detail placeholder-loader"
+  >
+    <div
+      className="content-loader"
+    >
+      <div
+        className="full-line animated-background"
+      />
+      <div
+        className="full-line animated-background"
+      />
+      <div
+        className="half-line animated-background"
+      />
+    </div>
+  </div>
+</div>
+`;

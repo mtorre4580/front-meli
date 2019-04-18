@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Detail /> should render snapshot 1`] = `
+<div
+  className="container"
+>
+  <nav>
+    <ol
+      className="breadcrumb"
+    >
+      <li
+        className="breadcrumb-item"
+      >
+        Electrónica, Audio y Video
+      </li>
+      <li
+        className="breadcrumb-item"
+      >
+        Audio
+      </li>
+      <li
+        className="breadcrumb-item"
+      >
+        Reproductores Portátiles
+      </li>
+      <li
+        className="breadcrumb-item"
+      >
+        iPod
+      </li>
+      <li
+        className="breadcrumb-item"
+      >
+        iPod touch
+      </li>
+      <li
+        className="breadcrumb-item"
+      >
+        32 GB
+      </li>
+    </ol>
+  </nav>
+  <section
+    className="item-detail"
+  >
+    <div
+      className="item-detail-ctn"
+    >
+      <div
+        className="item-detail-image"
+      >
+        <img
+          alt="Ipod Touch 4ta Generacion 32 Gb"
+          src="https://mla-s2-p.mlstatic.com/738532-MLA25881108346_082017-O.jpg"
+        />
+      </div>
+      <div
+        className="item-detail-header"
+      >
+        <p
+          className="condition"
+        >
+          <span>
+            Usado
+             - 
+          </span>
+          <span>
+            0
+             vendidos
+          </span>
+        </p>
+        <h2
+          className="item-detail-title"
+        >
+          Ipod Touch 4ta Generacion 32 Gb
+        </h2>
+        <p
+          className="price"
+        >
+          <span>
+            $
+          </span>
+          680
+        </p>
+        <button
+          className="btn btn-item-buy"
+          type="button"
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+    <div
+      className="item-description-ctn"
+    >
+      <h3>
+        Descripción del producto
+      </h3>
+      <div
+        className="item-description"
+      >
+        iPod Touch 4
+Capacidad 32 gB
+Pantalla Retina de 3,5 pulgadas
+
+El producto no esta funcionando
+La pantalla se salio del chasis
+      </div>
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Item /> should render snapshot 1`] = `
+<article
+  className="item"
+>
+  <a
+    aria-current={false}
+    className="item-image"
+    href="items/MLA769088925"
+    onClick={[Function]}
+  >
+    <picture
+      className="item-image"
+    >
+      <img
+        alt="Ipod Touch 5g 32gb"
+        className="d-block item-img"
+        src="http://mla-s2-p.mlstatic.com/720812-MLA25738240210_072017-I.jpg"
+      />
+    </picture>
+  </a>
+  <div
+    className="item-ctn"
+  >
+    <div
+      className="item-header"
+    >
+      <div
+        className="d-flex"
+      >
+        <p
+          className="price"
+        >
+          <span>
+            $
+          </span>
+          3,200
+        </p>
+      </div>
+      <p
+        className="text-location"
+      >
+        Buenos Aires
+      </p>
+    </div>
+    <a
+      aria-current={false}
+      className="item-title"
+      href="items/MLA769088925"
+      onClick={[Function]}
+    >
+      <h2>
+        Ipod Touch 5g 32gb
+      </h2>
+    </a>
+  </div>
+</article>
+`;

@@ -1,0 +1,68 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.item {
+    background-color: $color-white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    border-bottom: 2px solid $background-gray;
+    .item-image {
+        width: 90px;
+        height: 90px;
+        border-radius: 4px;
+        display: block;
+        @include respond-to(dt) {
+            width: 180px;
+            height: 180px;
+        }
+        .item-img {
+            width: 100%;
+            height: 100%;;
+        }
+    }
+    .item-ctn {
+        width: 100%;
+        padding: 1em;
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-bottom: 32px;
+            @include respond-to(dt) {
+                flex-direction: row;
+            }
+            .text-location {
+                @include font-rem(normal, 12px, 12px, null);
+                min-width: 20%;
+            }
+            // Icon free-shipping mobile - desktop
+            @include generate-icon('shipping', '/assets/icons/shipping-mobile.svg', 18px);
+            @include respond-to(dt) {
+                @include generate-icon('shipping', '/assets/icons/shipping-desktop.svg', 24px);
+            }
+            .shipping {
+                margin-left: 16px;
+                @include respond-to(dt) {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .item-title {
+            display: block;
+            max-width: 500px;
+            text-decoration: none;
+            color: $text-color;
+            h2 {
+                @include font-rem(normal, 18px, 18px, null);
+            }
+            @include respond-to(dt) {
+                &:hover {
+                    color: $text-black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> should render snapshot 1`] = `
+<div
+  className="error-ctn"
+>
+  <h2
+    className="title-err"
+  >
+    Se produjo un error
+  </h2>
+  <p>
+    No se pudieron obtener resultados
+  </p>
+</div>
+`;

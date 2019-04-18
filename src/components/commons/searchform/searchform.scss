@@ -1,0 +1,30 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+
+// Icon search mobile - desktop
+@include generate-icon('search', '/assets/icons/search-mobile.svg', 18px);
+@include respond-to(dt) {
+    @include generate-icon('search', '/assets/icons/search-desktop.svg', 24px);
+}
+
+.form-search {
+    width: 100%;
+    .input-group {
+        width: 100%;
+        padding-left: 20px;
+        .form-control {
+            color: $color-text;
+        }
+        #search_items {
+            border: 0;
+            color: $color-text;
+            @include font-rem(normal, 18px, 18px, null);
+        }
+        .input-group-prepend {
+            .input-group-text {
+                border: 0;
+                background-color: $color-grey;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    .title-err {
+        $text-black: $text-black;
+        @include font-rem(bold, 24px, 24px, null);
+    }
+}

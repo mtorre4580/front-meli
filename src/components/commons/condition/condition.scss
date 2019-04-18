@@ -1,0 +1,6 @@
+@import '../../../scss/mixins.scss';
+
+.condition {
+    margin-bottom: 0;
+    @include font-rem(normal, 14px, 14px, null);
+}
