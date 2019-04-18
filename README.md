@@ -13,6 +13,9 @@ Se utilizó [Redux](https://redux.js.org/) para manejar el state de la aplicaci�
 [Redux Form](https://redux-form.com/) para manejar el state del formulario de búsqueda, [Axios](https://github.com/axios/axios) como client para las peticiones HTTP, 
 [Boostrap](https://getbootstrap.com/) para los estilos, [SASS](https://sass-lang.com/) como preprocesador, [Recompose](https://github.com/acdlite/recompose) para no crear componentes stateful en el caso de necesitar algún lifecycle especifico como componentDidMount, React Router para el manejo de las rutas.
 
+Se puede acceder al [CHANGELOG](https://github.com/mtorre4580/front-meli/blob/master/CHANGELOG.md)
+Development - Master
+
 ## Start App
 
 ``` 
