@@ -12,5 +12,14 @@ exports[`<Error /> should render snapshot 1`] = `
   <p>
     No se pudieron obtener resultados
   </p>
+  <a
+    aria-current="true"
+    className="active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Ir a la página principal
+  </a>
 </div>
 `;

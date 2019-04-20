@@ -7,7 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import ItemDetail from './containers/DetailContainer';
 import ItemList from './containers/ResultsContainer';
 import Searchbox from './containers/SearchboxContainer';
-import NotFound from '../src/components/commons/error/error';
+import NotFound from '../src/components/commons/notfound/notfound';
 
 const App = () => (
   <Fragment>
@@ -15,7 +15,7 @@ const App = () => (
     <Switch>
       <Route exact path='/' />
       <Route exact path='/items' component={ItemList} />
-      <Route path='/items/:id' component={ItemDetail} />
+      <Route exact path='/items/:id' component={ItemDetail} />
       <Route component={NotFound} />
     </Switch>
   </Fragment>
