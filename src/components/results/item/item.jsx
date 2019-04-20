@@ -8,9 +8,9 @@ const Item = ({item}) => {
     return (
         <article className="item">
             <NavLink className="item-image" to={`items/${item.id}`}>
-                <picture className="item-image">
+                <figure className="item-image">
                     <img src={item.picture} alt={item.title}  className="d-block item-img" />
-                </picture>
+                </figure>
             </NavLink>
             <div className="item-ctn">
                 <div className="item-header">

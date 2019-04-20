@@ -10,7 +10,7 @@ exports[`<Item /> should render snapshot 1`] = `
     href="items/MLA769088925"
     onClick={[Function]}
   >
-    <picture
+    <figure
       className="item-image"
     >
       <img
@@ -18,7 +18,7 @@ exports[`<Item /> should render snapshot 1`] = `
         className="d-block item-img"
         src="http://mla-s2-p.mlstatic.com/720812-MLA25738240210_072017-I.jpg"
       />
-    </picture>
+    </figure>
   </a>
   <div
     className="item-ctn"

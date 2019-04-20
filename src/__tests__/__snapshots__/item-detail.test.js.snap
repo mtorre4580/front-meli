@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ItemDetail /> should render snapshot 1`] = `
-<div
+<section
   className="container"
 >
   <nav>
@@ -40,22 +40,27 @@ exports[`<ItemDetail /> should render snapshot 1`] = `
       </li>
     </ol>
   </nav>
-  <section
-    className="item-detail"
+  <div
+    className="container item-detail"
   >
     <div
-      className="item-detail-ctn"
+      className="row"
     >
       <div
-        className="item-detail-image"
+        className="col-xs-12 col-md-6 offset-md-2"
       >
-        <img
-          alt="Ipod Touch 4ta Generacion 32 Gb"
-          src="http://mla-s2-p.mlstatic.com/738532-MLA25881108346_082017-I.jpg"
-        />
+        <figure
+          className="item-detail-image"
+        >
+          <img
+            alt="Ipod Touch 4ta Generacion 32 Gb"
+            className="img-fluid"
+            src="http://mla-s2-p.mlstatic.com/738532-MLA25881108346_082017-I.jpg"
+          />
+        </figure>
       </div>
       <div
-        className="item-detail-header"
+        className="col-xs-12 col-md-4"
       >
         <p
           className="condition"
@@ -69,11 +74,11 @@ exports[`<ItemDetail /> should render snapshot 1`] = `
              vendidos
           </span>
         </p>
-        <h2
+        <h1
           className="item-detail-title"
         >
           Ipod Touch 4ta Generacion 32 Gb
-        </h2>
+        </h1>
         <p
           className="price"
         >
@@ -91,15 +96,21 @@ exports[`<ItemDetail /> should render snapshot 1`] = `
       </div>
     </div>
     <div
-      className="item-description-ctn"
+      className="row my-5"
     >
-      <h3>
-        Descripción del producto
-      </h3>
       <div
-        className="item-description"
-      />
+        className="col-xs-12 col-md-8 item-detail-description-ctn"
+      >
+        <h2
+          className="item-detail-title"
+        >
+          Descripción del producto
+        </h2>
+        <p
+          className="item-description"
+        />
+      </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;

@@ -6,26 +6,30 @@ import Condition from '../../commons/condition/condition';
 import Breadcrumb from '../../commons/breadcrumb/breadcrumb';
 
 const ItemDetail = ({item, categories}) => (
-    <div className="container">
+    <section className="container">
         <Breadcrumb categories={categories} />
-        <section className="item-detail">
-            <div className="item-detail-ctn">
-                <div className="item-detail-image">
-                    <img src={item.picture} alt={item.title} />
+        <div className="container item-detail">
+            <div className="row">
+                <div className="col-xs-12 col-md-6 offset-md-2">
+                    <figure className="item-detail-image">
+                        <img src={item.picture} alt={item.title} className="img-fluid" />
+                    </figure>
                 </div>
-                <div className="item-detail-header">
+                <div className="col-xs-12 col-md-4">
                     <Condition condition={item.condition} sold_quantity={item.sold_quantity} />
-                    <h2 className="item-detail-title">{item.title}</h2>
+                    <h1 className="item-detail-title">{item.title}</h1>
                     <Price value={item.price} />
                     <button type="button" className="btn btn-item-buy">Comprar</button>
                 </div>
             </div>
-            <div className="item-description-ctn">
-                <h3>Descripción del producto</h3>
-                <div className="item-description">{item.description}</div>
+            <div className="row my-5">
+                <div className="col-xs-12 col-md-8 item-detail-description-ctn">
+                    <h2 className="item-detail-title">Descripción del producto</h2>
+                    <p className="item-description">{item.description}</p>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 );
 
 ItemDetail.propTypes = {
