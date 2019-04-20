@@ -10,7 +10,7 @@ export default class ItemsApi {
      * @param {string} query
      * @returns {Promise}
      */
-    search(query) {
+    static search(query) {
         return axios.get(`${process.env.REACT_APP_API_URL}/items`, { params: { q: query } });
     }
 
@@ -19,7 +19,7 @@ export default class ItemsApi {
      * @param {string} id
      * @returns {Promise}
      */
-    getDetail(id) {
+    static getDetail(id) {
         return axios.get(`${process.env.REACT_APP_API_URL}/items/${id}`);
     }
 

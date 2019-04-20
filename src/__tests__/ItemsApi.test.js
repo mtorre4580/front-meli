@@ -9,23 +9,21 @@ const responseMockDetail = {author:{name:'Matias Daniel',lastname:'Torre'},item:
 describe('Items Api Service', () => {
 
     let mock;
-    let itemsApi;
 
     beforeAll(() => {
         mock = new MockAdapter(axios);
-        itemsApi = new ItemsApi();
     });
 
     it('should fetch all results for query ipod API /items', async () => {
         mock.onGet(`${process.env.REACT_APP_API_URL}/items`).reply(200, responseMockSearch);
-        const { data } = await itemsApi.search('ipod');
+        const { data } = await ItemsApi.search('ipod');
         expect(data).toEqual(responseMockSearch);
     });
 
     it('should fetch detail item by id /items', async () => {
         const id = 'MLA772322281';
         mock.onGet(`${process.env.REACT_APP_API_URL}/items/${id}`).reply(200, responseMockDetail);
-        const { data } = await itemsApi.getDetail(id);
+        const { data } = await ItemsApi.getDetail(id);
         expect(data).toEqual(responseMockDetail);
     });
     
