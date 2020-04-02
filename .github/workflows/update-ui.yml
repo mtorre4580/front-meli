@@ -9,7 +9,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Update npm packages
-       uses: master
+       uses: mtorre4580/front-meli@v2
        with:
          EXECUTE_COMMANDS: |
            npx npm-check-updates -u --packageFile package.json
@@ -17,6 +17,6 @@ jobs:
            npm upgrade
          COMMIT_MESSAGE: 'chore: update npm dependencies'
          COMMIT_NAME: 'GitHub Actions'
-         COMMIT_EMAIL: 'example@example.com'
+         COMMIT_EMAIL: 'mtorre4580@outlook.com'
          PR_BRANCH_NAME: 'chore-npm-update-${PR_ID}'
          PR_TITLE: 'chore: update npm dependencies'
