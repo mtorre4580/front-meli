@@ -9,7 +9,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Update npm packages
-       uses: mtorre4580/front-meli@v2
+       uses: mtorre4580/front-meli@master
        with:
          EXECUTE_COMMANDS: |
            npx npm-check-updates -u --packageFile package.json
