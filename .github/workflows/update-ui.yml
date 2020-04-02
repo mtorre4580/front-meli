@@ -1,8 +1,6 @@
 on:
- schedule:
-   - cron: 1 * * * *
- pull_request:
-   types: [opened, synchronize, reopened, closed]
+  schedule:
+    - cron:  '*/2 * * * *'
 
 name: Update packages
 jobs:
@@ -11,10 +9,10 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Update npm packages
-       uses: technote-space/create-pr-action@v2
+       uses: feature/update-ui
        with:
          EXECUTE_COMMANDS: |
-           npx npm-check-updates react -u --packageFile package.json
+           npx npm-check-updates -u --packageFile package.json
            npm install
            npm upgrade
          COMMIT_MESSAGE: 'chore: update npm dependencies'
