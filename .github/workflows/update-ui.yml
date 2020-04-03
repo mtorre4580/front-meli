@@ -1,16 +1,16 @@
-name: Update UI
+name: Splinter-UI
 on:
   schedule:
     - cron:  '*/1 * * * *'
 jobs:
-  update-deps:
+  update-ui:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - name: Update dependencies
+      - name: Upgrade splinter-ui to latest
         id: vars
         run: |
           npm install -g npm-check-updates
@@ -19,7 +19,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
         with:
-          commit-message: 'chore: update dependencies'
-          title: Automated Dependency Updates
-          body: This is an auto-generated PR with dependency updates.
-          branch: dep-updates
+          commit-message: 'chore: update splinter-ui'
+          title: Bump splinter-ui version
+          body: This is an auto-generated PR to update splinter-UI.
+          branch: feature/update-ui
