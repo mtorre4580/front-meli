@@ -46,7 +46,7 @@
     "react-test-renderer": "16.8.5",
     "redux-devtools-extension": "2.13.8",
     "redux-test-utils": "0.3.0",
-    "standard-version": "5.0.2"
+    "standard-version": "7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
