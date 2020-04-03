@@ -8,8 +8,9 @@ jobs:
    name: Update npm packages
    runs-on: ubuntu-latest
    steps:
+     - uses: actions/checkout@v2
      - name: Update npm packages
-       uses: ./.github/workflows/update-ui@master
+       uses: ./.github/actions/update-ui@master
        with:
          EXECUTE_COMMANDS: |
            npx npm-check-updates -u --packageFile package.json
