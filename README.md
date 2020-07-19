@@ -1,6 +1,6 @@
 # frontend-meli
 
-Frontend de la aplicación interview de mercadolibre.
+Frontend of the interview application from mercadolibre.
 
 [![Build Status](https://travis-ci.com/mtorre4580/front-meli.svg?branch=master)](https://travis-ci.com/mtorre4580/front-meli)
 [![Coverage Status](https://coveralls.io/repos/github/mtorre4580/front-meli/badge.svg?branch=master)](https://coveralls.io/github/mtorre4580/front-meli?branch=master)
@@ -9,12 +9,12 @@ Frontend de la aplicación interview de mercadolibre.
 
 ## Overview
 
-La aplicación fue desarrollada con [React](https://reactjs.org/).
-Se utilizó [Redux](https://redux.js.org/) para manejar el state de la aplicación , [Redux Saga](https://redux-saga.js.org/) para los side effect, se aplicó 
-[Redux Form](https://redux-form.com/) para manejar el state del formulario de búsqueda, [Axios](https://github.com/axios/axios) como client para las peticiones HTTP, 
-[Boostrap](https://getbootstrap.com/) para los estilos, [SASS](https://sass-lang.com/) como preprocesador, [Recompose](https://github.com/acdlite/recompose) para no crear componentes stateful en el caso de necesitar algún lifecycle especifico como componentDidMount, React Router para el manejo de las rutas.
+The application was developed with [React](https://reactjs.org/).
+It was used [Redux](https://redux.js.org/) to handle the application state, [Redux Saga](https://redux-saga.js.org/) for the side effects, it was applied
+[Redux Form] (https://redux-form.com/) to handle the state of the search form, [Axios] (https://github.com/axios/axios) as a client for HTTP requests,
+[Boostrap] (https://getbootstrap.com/) for styles, [SASS] (https://sass-lang.com/) as a preprocessor, [Recompose] (https://github.com/acdlite/recompose ) in order not to create stateful components in the case of needing a specific lifecycle such as componentDidMount, React Router for route management.
 
-Se puede acceder al [CHANGELOG](https://github.com/mtorre4580/front-meli/blob/master/CHANGELOG.md)
+[CHANGELOG] can be accessed (https://github.com/mtorre4580/front-meli/blob/master/CHANGELOG.md)
 Development - Master
 
 ## Start App
@@ -29,8 +29,8 @@ $ npm start
 
 ## Observación
 
-La aplicación la pensé separada tanto el front como el backend, para correr se necesita tener levantado el backend de node
-se puede encontrar acá [back-meli](https://github.com/mtorre4580/back-meli), en el caso que no fuera asi, lo unico que hay que hacer es setear por express que tome el build de manera static
+The application I thought separate both the front and the backend, to run you need to have the node backend raised
+You can find it here [api-meli] (https://github.com/mtorre4580/api-meli), in case it was not, the only thing to do is set by express to take the build in a static way
 
 ## Build and Release
 
@@ -44,9 +44,9 @@ $ npm run release
 
 ## Test (Jest / Enzyme)
 
-La aplicación cuenta con test unitarios ubicados en la carpeta __tests__ `src/__tests__`
-Se utilizó [Jest](https://jestjs.io/) para los test utilizando [Enzyme](https://airbnb.io/enzyme/) para los componentes tener snapshots de las versiones que
-se van creando, se realizó test de los actions, reducers.
+The application has unit tests located in the __tests__ `src / __ tests__` folder.
+[Jest] (https://jestjs.io/) was used for the tests using [Enzyme] (https://airbnb.io/enzyme/) for the components to have snapshots of the versions that
+they are being created, tests of the actions were performed, reducers.
 
 ```
 $ npm run test
@@ -54,8 +54,8 @@ $ npm run test
 
 ## Storybook
 
-La aplicación cuenta con [Storybook](https://storybook.js.org/) para tener una documentación de los componentes provistos por la App.
-Se encuentran dividos por funcionalidad, se pueden encontrar en la carpeta `stories`
+The application has [Storybook] (https://storybook.js.org/) to have a documentation of the components provided by the App.
+They are divided by functionality, they can be found in the `stories` folder
 
 ```
 $ npm run storybook
@@ -68,7 +68,7 @@ $ npm run storybook
 
 ## Sentry
 
-La aplicación cuenta con tracking de errores via [Sentry](https://sentry.io/welcome/) cuenta gratuita para pruebas (15 días).
+The application has error tracking via [Sentry] (https://sentry.io/welcome/) free account for testing (15 days).
 
 <div style="text-align:center;margin:auto">
     <img src ="sentry.png" />
@@ -76,14 +76,14 @@ La aplicación cuenta con tracking de errores via [Sentry](https://sentry.io/wel
 
 ## Semantic Commits
 
-Se realiza la integración con commits semanticos que permiten tener luego a partir de estos un CHANGELOG autómatico a la hora de realizar una release. (feat, style, chore...)
+The integration is made with semantic commits that allow to have afterwards an automatic CHANGELOG when making a release. (feat, style, chore ...)
 
 Formato: `<type>(<scope>): <subject>`
 
 ## Performance
 
-Para verificar la performance de la app, se creó un script que ejecuta lighthouse en modo performance.
-Falta corregir y parametrizar algunos datos...
+To verify the app's performance, a script was created that runs lighthouse in performance mode.
+Some data needs to be corrected and parameterized ...
 
 ```
 $ npm run performance
